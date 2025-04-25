@@ -387,7 +387,7 @@ module.exports = async (req, res) => {
                     support team.
                   </p>
                   <Button asChild className="w-full">
-                    <a href="https://bless.network/support" target="_blank" rel="noopener noreferrer">
+                    <a href="https://discord.com/invite/blessnetwork" target="_blank" rel="noopener noreferrer">
                       Contact Support
                     </a>
                   </Button>
