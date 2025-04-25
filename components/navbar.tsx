@@ -17,7 +17,7 @@ export default function Navbar() {
     { href: "/", label: "Home" },
     { href: "/apis", label: "API Catalog" },
     { href: "#", label: "Guides" },
-    { href: "/deploy", label: "Deploy with Bless" },
+    { href: "https://docs.bless.network/build-on-bless/installation", label: "Deploy with Bless" },
     { href: "/about", label: "About" },
   ]
 
