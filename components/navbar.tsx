@@ -16,7 +16,7 @@ export default function Navbar() {
   const routes = [
     { href: "/", label: "Home" },
     { href: "/apis", label: "API Catalog" },
-    { href: "/guides", label: "Guides" },
+    { href: "#", label: "Guides" },
     { href: "/deploy", label: "Deploy with Bless" },
     { href: "/about", label: "About" },
   ]
