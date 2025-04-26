@@ -125,7 +125,7 @@ export default function ContributePage() {
 
           <div className="flex justify-center mt-8 not-prose">
             <Button asChild size="lg" className="gap-2">
-              <a href="https://discord.com/invite/blessnetwork" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/bless-api-book" target="_blank" rel="noopener noreferrer">
                 <Github className="h-5 w-5" />
                 Contribute on GitHub
               </a>

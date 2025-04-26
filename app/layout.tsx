@@ -2,15 +2,15 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
+import { ThemeProvider } from "@/components/theme-provider"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Bless API Book - Comprehensive API Integration Tutorials",
-  description: "Learn how to integrate 50+ APIs with step-by-step guides and code examples",
+  title: "Bless API Book - Learn and Integrate APIs",
+  description: "A comprehensive guide to popular APIs with tutorials and integration examples",
     generator: 'v0.dev'
 }
 

@@ -2,12 +2,12 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Search, Menu, X } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
 import { cn } from "@/lib/utils"
 import { ThemeToggle } from "@/components/theme-toggle"
+import { Search } from "@/components/search"
 
 export default function Navbar() {
   const pathname = usePathname()
@@ -16,8 +16,8 @@ export default function Navbar() {
   const routes = [
     { href: "/", label: "Home" },
     { href: "/apis", label: "API Catalog" },
-    { href: "#", label: "Guides" },
-    { href: "https://docs.bless.network/build-on-bless/installation", label: "Deploy with Bless" },
+    { href: "/guides", label: "Guides" },
+    { href: "https://docs.bless.network/build-on-bless/installation", label: "Deploy on Bless", external: true },
     { href: "/about", label: "About" },
   ]
 
@@ -32,29 +32,35 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-6">
-          {routes.map((route) => (
-            <Link
-              key={route.href}
-              href={route.href}
-              className={cn(
-                "text-sm font-medium transition-colors hover:text-primary",
-                pathname === route.href ? "text-foreground" : "text-muted-foreground",
-              )}
-            >
-              {route.label}
-            </Link>
-          ))}
+          {routes.map((route) =>
+            route.external ? (
+              <a
+                key={route.href}
+                href={route.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={cn("text-sm font-medium transition-colors hover:text-primary", "text-muted-foreground")}
+              >
+                {route.label}
+              </a>
+            ) : (
+              <Link
+                key={route.href}
+                href={route.href}
+                className={cn(
+                  "text-sm font-medium transition-colors hover:text-primary",
+                  pathname === route.href ? "text-foreground" : "text-muted-foreground",
+                )}
+              >
+                {route.label}
+              </Link>
+            ),
+          )}
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
-          <div className="relative">
-            <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
-            <Input
-              type="search"
-              placeholder="Search APIs..."
-              className="w-[200px] pl-8 md:w-[250px] lg:w-[300px]"
-              aria-label="Search APIs"
-            />
+          <div className="w-[250px] lg:w-[300px]">
+            <Search />
           </div>
           <ThemeToggle />
         </div>
@@ -72,23 +78,35 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="container md:hidden py-4 pb-6">
           <nav className="flex flex-col gap-4">
-            {routes.map((route) => (
-              <Link
-                key={route.href}
-                href={route.href}
-                className={cn(
-                  "text-sm font-medium transition-colors hover:text-primary",
-                  pathname === route.href ? "text-foreground" : "text-muted-foreground",
-                )}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {route.label}
-              </Link>
-            ))}
+            {routes.map((route) =>
+              route.external ? (
+                <a
+                  key={route.href}
+                  href={route.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium transition-colors hover:text-primary text-muted-foreground"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {route.label}
+                </a>
+              ) : (
+                <Link
+                  key={route.href}
+                  href={route.href}
+                  className={cn(
+                    "text-sm font-medium transition-colors hover:text-primary",
+                    pathname === route.href ? "text-foreground" : "text-muted-foreground",
+                  )}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {route.label}
+                </Link>
+              ),
+            )}
           </nav>
-          <div className="mt-4 relative">
-            <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
-            <Input type="search" placeholder="Search APIs..." className="w-full pl-8" aria-label="Search APIs" />
+          <div className="mt-4">
+            <Search />
           </div>
         </div>
       )}

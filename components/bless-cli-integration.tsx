@@ -1,6 +1,6 @@
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import CodeBlock from "@/components/code-block"
+import { CodeBlock } from "@/components/code-block"
 import { Terminal } from "lucide-react"
 
 interface BlessCliIntegrationProps {
@@ -11,7 +11,7 @@ interface BlessCliIntegrationProps {
   authParam?: string
 }
 
-export default function BlessCliIntegration({
+export function BlessCliIntegration({
   apiName,
   apiBaseUrl,
   apiEndpoint,
@@ -182,3 +182,6 @@ fetchData();`
     </div>
   )
 }
+
+// Also export as default for backward compatibility
+export default BlessCliIntegration
