@@ -150,13 +150,7 @@ export default function TermsOfServicePage() {
           </p>
 
           <h2>Contact Us</h2>
-          <p>
-            If you have any questions about these Terms, please contact us at:
-            <br />
-            <a href="mailto:terms@bless.network" className="text-primary">
-              terms@bless.network
-            </a>
-          </p>
+       
         </div>
       </div>
     </div>

@@ -106,7 +106,7 @@ export default function PrivacyPolicyPage() {
             Network services, such as the Bless Network CLI, additional terms and privacy considerations may apply.
             Please refer to the{" "}
             <a
-              href="https://bless.network/privacy"
+              href="https://bless.network/privacy-policy"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary hover:underline"
@@ -124,13 +124,7 @@ export default function PrivacyPolicyPage() {
           </p>
 
           <h2>Contact Us</h2>
-          <p>
-            If you have any questions about this privacy policy or our privacy practices, please contact us at:
-            <br />
-            <a href="mailto:privacy@bless.network" className="text-primary">
-              privacy@bless.network
-            </a>
-          </p>
+         
         </div>
       </div>
     </div>

@@ -704,10 +704,7 @@ function logSecurityEvent(event) {
               </Link>
             </li>
             <li>
-              <Link href="/guides/testing" className="text-primary hover:underline">
-                Testing API Integrations
-              </Link>
-            </li>
+            
             <li>
               <a
                 href="https://owasp.org/API-Security/editions/2023/en/0x00-introduction/"

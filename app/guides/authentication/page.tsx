@@ -468,11 +468,7 @@ export default async function handler(req, res) {
                 Error Handling Best Practices
               </Link>
             </li>
-            <li>
-              <Link href="/guides/testing" className="text-blue-600 dark:text-blue-400 hover:underline">
-                Testing API Integrations
-              </Link>
-            </li>
+           
           </ul>
         </div>
       </div>
