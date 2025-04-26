@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Press+Start+2P&display=swap');
-
+/* Update the color scheme to white and green */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -58,10 +57,4 @@
   body {
     @apply bg-background text-foreground;
   }
-}
-
-.press-start-2p-regular {
-  font-family: "Press Start 2P", system-ui;
-  font-weight: 400;
-  font-style: normal;
 }
