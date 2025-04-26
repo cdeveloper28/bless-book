@@ -38,18 +38,6 @@ export default function GuidesPage() {
       slug: "security",
       icon: "🛡️",
     },
-    {
-      title: "Working with Webhooks",
-      description: "Understanding and implementing webhooks for real-time API integrations.",
-      slug: "webhooks",
-      icon: "🔄",
-    },
-    {
-      title: "Testing API Integrations",
-      description: "Comprehensive approaches to testing your API integrations effectively.",
-      slug: "testing",
-      icon: "🧪",
-    },
   ]
 
   return (
