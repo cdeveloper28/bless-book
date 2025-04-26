@@ -467,14 +467,7 @@ button:hover {
             </div>
 
             {/* Bless Network CLI Integration Section */}
-            <BlessCliIntegration
-              apiName={api.name}
-              apiBaseUrl={api.baseUrl}
-              apiEndpoint="/"
-              authType="apiKey"
-              authParam="query 'api_key=YOUR_API_KEY_HERE'"
-            />
-
+          
             <div>
               <h2 className="text-2xl font-bold mb-4">Error Handling</h2>
               <div className="space-y-4">
@@ -600,16 +593,7 @@ button:hover {
                       Bless Network CLI Documentation
                     </a>
                   </li>
-                  <li>
-                    <a
-                      href="https://bless.network/templates/nasa-api"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary hover:underline flex items-center gap-1 text-sm"
-                    >
-                      NASA API Template
-                    </a>
-                  </li>
+                 
                   <li>
                     <a
                       href="https://discord.gg/yXUWUzQU"

@@ -703,11 +703,10 @@ function logSecurityEvent(event) {
                 Dealing with Rate Limits
               </Link>
             </li>
-            <li>
-            
+           
             <li>
               <a
-                href="https://owasp.org/API-Security/editions/2023/en/0x00-introduction/"
+                href="https://owasp.org/API-Security/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:underline"

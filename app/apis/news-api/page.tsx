@@ -1195,16 +1195,7 @@ h1 {
                       Bless Network CLI Documentation
                     </a>
                   </li>
-                  <li>
-                    <a
-                      href="https://bless.network/templates/news-api"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary hover:underline flex items-center gap-1 text-sm"
-                    >
-                      News API Template
-                    </a>
-                  </li>
+                 
                   <li>
                     <a
                       href="https://discord.gg/yXUWUzQU"

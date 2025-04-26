@@ -611,8 +611,7 @@ class AdaptiveThrottler {
                 Error Handling Best Practices
               </Link>
             </li>
-          
-            </li>
+           
           </ul>
         </div>
       </div>
