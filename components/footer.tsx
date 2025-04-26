@@ -77,7 +77,7 @@ export default function Footer() {
           <div className="flex flex-col gap-2">
             <h3 className="text-lg font-semibold">Legal</h3>
             <nav className="flex flex-col gap-2" aria-label="Legal">
-              <Link href="/" className="text-sm text-muted-foreground hover:text-foreground">
+              <Link href="https://bless.network/privacy-policy/" className="text-sm text-muted-foreground hover:text-foreground">
                 Privacy Policy
               </Link>
               <Link href="/terms" className="text-sm text-muted-foreground hover:text-foreground">

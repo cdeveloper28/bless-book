@@ -16,7 +16,7 @@ export default function PrivacyPolicyPage() {
         </div>
 
         <div className="prose prose-green max-w-none">
-          <p>Last updated: April 25, 2024</p>
+          <p>Last updated: April 25, 2025</p>
 
           <h2>Introduction</h2>
           <p>

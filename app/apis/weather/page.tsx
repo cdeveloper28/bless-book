@@ -303,13 +303,7 @@ h1 {
             </div>
 
             {/* Bless Network CLI Integration Section */}
-            <BlessCliIntegration
-              apiName={api.name}
-              apiBaseUrl={api.baseUrl}
-              apiEndpoint="/current.json?q=London"
-              authType="apiKey"
-              authParam="header 'key: YOUR_API_KEY_HERE'"
-            />
+           
 
             <div>
               <h2 className="text-2xl font-bold mb-4">Error Handling</h2>

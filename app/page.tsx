@@ -11,21 +11,26 @@ export default function Home() {
       <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center gap-4 text-center">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-              Master API Integration with Bless API Book
-            </h1>
-            <p className="max-w-[700px] text-muted-foreground md:text-xl">
-              Your comprehensive guide to integrating 50+ APIs with step-by-step tutorials and ready-to-use code
-              snippets.
-            </p>
-            <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Button asChild size="lg">
-                <Link href="/apis">Browse APIs</Link>
-              </Button>
-              <Button variant="outline" size="lg">
-                <Link href="/guides">Read Guides</Link>
-              </Button>
-            </div>
+           
+        <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+          Master API Integration with<span className="bg-gray-500 mr-1 p-1 font-mono"> Bless API Bo🕮k</span>
+        </h1>
+        <p className="max-w-[700px] text-muted-foreground md:text-xl typewriter">
+          Your comprehensive guide to integrating  APIs with step-by-step tutorials and ready-to-use code
+          snippets.
+        </p>
+        <div className="flex flex-col gap-2 min-[400px]:flex-row">
+          <Button asChild size="lg">
+            <Link href="/apis">Browse APIs <svg className="animate-pulse " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles-icon lucide-sparkles"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg></Link>
+          </Button>
+          <Button variant="outline" size="lg">
+            <Link href="/guides">Read Guides</Link>
+          </Button>
+        </div>
+        <center className="flex  justify-center">
+        <div className="bg-green-600 rounded-full animate-ping text-green-700 h-2 w-2 inline mt-2 mr-1"></div>
+          <text className="max-w-[700px] text-muted-foreground md:text-xl inline"> View on desktop for better interactivity </text>
+        </center>
           </div>
         </div>
       </section>
@@ -60,7 +65,7 @@ export default function Home() {
           <Card>
             <CardHeader className="pb-2">
               <Globe className="h-6 w-6 mb-2 text-primary" aria-hidden="true" />
-              <CardTitle>50+ APIs</CardTitle>
+              <CardTitle>MULTIPLE APIs</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">

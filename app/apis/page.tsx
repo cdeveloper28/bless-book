@@ -104,6 +104,40 @@ export default function ApiCatalog() {
       category: "Entertainment",
       difficulty: "Intermediate",
     },
+    
+    {
+      id: "nasa-apod-api",
+      name: "NASA APOD API",
+      description: "Get NASA's Astronomy Picture of the Day with explanations",
+      category: "Science",
+      difficulty: "Beginner",
+    },
+
+     
+    {
+      id: "twitter-api",
+      name: "Twitter API",
+      description: "Access tweets, user data, and social media interactions",
+      category: "Social Media",
+      difficulty: "Intermediate",
+    },
+
+    
+    {
+      id: "spotify-api",
+      name: "Spotify API",
+      description: "Access music data, playlists, and user information from Spotify",
+      category: "Music",
+      difficulty: "Intermediate",
+    },
+{
+    id: "unsplash-api",
+    name: "Unsplash API",
+    description: "Access high-quality, royalty-free images for your projects",
+    category: "Photography",
+    difficulty: "Beginner",
+  },
+
   ]
 
   // Get unique categories

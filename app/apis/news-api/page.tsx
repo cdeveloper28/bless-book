@@ -1066,14 +1066,7 @@ h1 {
             </div>
 
             {/* Bless Network CLI Integration Section */}
-            <BlessCliIntegration
-              apiName={api.name}
-              apiBaseUrl={api.baseUrl}
-              apiEndpoint="/top-headlines?country=us"
-              authType="apiKey"
-              authParam="query 'apiKey=YOUR_API_KEY_HERE'"
-            />
-
+      
             <div>
               <h2 className="text-2xl font-bold mb-4">Error Handling</h2>
               <div className="space-y-4">
@@ -1195,16 +1188,7 @@ h1 {
                       Bless Network CLI Documentation
                     </a>
                   </li>
-                  <li>
-                    <a
-                      href="https://bless.network/templates/news-api"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary hover:underline flex items-center gap-1 text-sm"
-                    >
-                      News API Template
-                    </a>
-                  </li>
+           
                   <li>
                     <a
                       href="https://discord.gg/yXUWUzQU"

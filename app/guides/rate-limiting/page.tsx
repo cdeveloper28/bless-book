@@ -216,7 +216,7 @@ async function fetchMultipleItems() {
           <span>•</span>
           <span>30 min read</span>
           <span>•</span>
-          <span>Last updated: April 26, 2024</span>
+          <span>Last updated: April 26, 2025</span>
         </div>
 
         <div className="prose prose-green dark:prose-invert max-w-none">
@@ -602,17 +602,16 @@ class AdaptiveThrottler {
           <h2>Further Reading</h2>
           <ul>
             <li>
-              <Link href="/guides/caching" className="text-primary hover:underline">
+              <Link href="/guides/caching" className="text-blue-600  hover:underline">
                 API Response Caching
               </Link>
             </li>
             <li>
-              <Link href="/guides/error-handling" className="text-primary hover:underline">
+              <Link href="/guides/error-handling" className="text-blue-600 hover:underline">
                 Error Handling Best Practices
               </Link>
             </li>
-          
-            </li>
+           
           </ul>
         </div>
       </div>

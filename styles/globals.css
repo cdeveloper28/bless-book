@@ -11,9 +11,16 @@ body {
     text-wrap: balance;
   }
 }
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 @layer base {
   :root {
+    
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;

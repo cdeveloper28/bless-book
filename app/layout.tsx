@@ -5,6 +5,8 @@ import "./globals.css"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { ThemeProvider } from "@/components/theme-provider"
+import { pressStart2P } from '/fonts';
+
 
 const inter = Inter({ subsets: ["latin"] })
 
