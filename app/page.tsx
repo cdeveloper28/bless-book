@@ -12,7 +12,7 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center gap-4 text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-              Master API Integration with <span className="bg-green-600 mr-1 p-1 font-mono "> Bless API Bo&#128240k</span>
+              Master API Integration with <span className="bg-green-600 mr-1 p-1 font-mono "> Bless API Book</span>
             </h1>
             <p className="max-w-[700px] text-muted-foreground md:text-xl">
               Your comprehensive guide to integrating APIs with step-by-step tutorials and ready-to-use code snippets.
