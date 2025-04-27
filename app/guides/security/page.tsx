@@ -229,6 +229,37 @@ async function postWithCsrfProtection(url, data) {
             to data validation and protection against common attacks.
           </p>
 
+          <div className="my-8 border rounded-lg overflow-hidden">
+            <h3 className="text-xl font-semibold p-4 bg-muted">Required Configuration</h3>
+            <div className="p-4">
+              <p className="mb-4">
+                For your application to work successfully with our APIs, you need to include the following configuration
+                in your <code>bls.toml</code> file:
+              </p>
+
+              <img
+                src="/images/bls-toml-config.png"
+                alt="bls.toml configuration example"
+                className="w-full max-w-2xl mb-6 border rounded shadow-sm"
+              />
+
+              <div className="bg-muted p-4 rounded-md mb-4">
+                <pre className="whitespace-pre-wrap text-sm">
+                  {`[deployment]
+permission = "public"
+nodes = 1
+
+permissions = [ "https://yourapiwebsite/" ]`}
+                </pre>
+              </div>
+
+              <p className="text-sm text-muted-foreground">
+                This configuration grants your application the necessary permissions to access our API endpoints
+                securely.
+              </p>
+            </div>
+          </div>
+
           <h2>Understanding API Security Risks</h2>
           <p>
             Before diving into best practices, it's important to understand the common security risks associated with

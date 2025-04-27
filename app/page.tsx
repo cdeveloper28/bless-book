@@ -15,20 +15,43 @@ export default function Home() {
               Master API Integration with <span className="bg-green-600 mr-1 p-1 font-mono "> Bless API Bo🕮k</span>
             </h1>
             <p className="max-w-[700px] text-muted-foreground md:text-xl">
-              Your comprehensive guide to integrating  APIs with step-by-step tutorials and ready-to-use code
-              snippets.
+              Your comprehensive guide to integrating APIs with step-by-step tutorials and ready-to-use code snippets.
             </p>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button asChild size="lg">
-                <Link href="/apis">Browse APIs<svg className="animate-pulse " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles-icon lucide-sparkles"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg></Link>
+                <Link href="/apis">
+                  Browse APIs
+                  <svg
+                    className="animate-pulse "
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-sparkles-icon lucide-sparkles"
+                  >
+                    <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" />
+                    <path d="M20 3v4" />
+                    <path d="M22 5h-4" />
+                    <path d="M4 17v2" />
+                    <path d="M5 18H3" />
+                  </svg>
+                </Link>
               </Button>
               <Button variant="outline" size="lg">
                 <Link href="/guides">Read Guides</Link>
               </Button>
             </div>
-             <center className="flex  justify-center">
-            <div className="bg-green-600 rounded-full animate-ping text-green-700 h-2 w-2 inline mt-2 mr-1"></div>
-              <text className="max-w-[700px] text-muted-foreground md:text-xl inline"> View on desktop for better interactivity </text>
+            <center className="flex  justify-center">
+              <div className="bg-green-600 rounded-full animate-ping text-green-700 h-2 w-2 inline mt-2 mr-1"></div>
+              <text className="max-w-[700px] text-muted-foreground md:text-xl inline">
+                {" "}
+                View on desktop for better interactivity{" "}
+              </text>
             </center>
           </div>
         </div>
@@ -36,6 +59,19 @@ export default function Home() {
 
       {/* Bless Network Section */}
       <section className="container px-4 md:px-6">
+        <div className="fl">
+          <img src="https://i.ibb.co/ds32byJv/Screenshot-2025-04-27-022930.png" alt="" className="max-w-full h-auto" />
+        </div>
+        <center>
+          <div className="bg-gray-900 text-green-400 p-6 rounded-lg font-mono text-sm w-full max-w-2xl mx-auto mt-10 shadow-lg">
+            <pre>
+              <span className="text-blue-400">[deployment]</span>
+              permission = <span className="text-yellow-400">"public"</span>
+              nodes = <span className="text-pink-400">1</span>
+              permissions = [ <span className="text-yellow-400">"https://yourapiwebsite/"</span> ]
+            </pre>
+          </div>
+        </center>
         <div className="flex flex-col gap-4 items-center text-center">
           <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Powered by Bless.network</div>
           <h2 className="text-3xl font-bold tracking-tight">Built for the Bless Network Ecosystem</h2>
@@ -145,7 +181,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Browse our catalog of 50+ APIs and find the one that fits your project needs.
+                  Browse our catalog of APIs and find the one that fits your project needs.
                 </p>
               </CardContent>
               <CardFooter>
