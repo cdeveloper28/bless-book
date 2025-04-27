@@ -16,7 +16,7 @@ export default function TermsOfServicePage() {
         </div>
 
         <div className="prose prose-green max-w-none">
-          <p>Last updated: April 25, 2025</p>
+          <p>Last updated: April 25, 2024</p>
 
           <h2>Introduction</h2>
           <p>
@@ -150,7 +150,13 @@ export default function TermsOfServicePage() {
           </p>
 
           <h2>Contact Us</h2>
-       
+          <p>
+            If you have any questions about these Terms, please contact us at:
+            <br />
+            <a href="mailto:terms@bless.network" className="text-primary">
+              terms@bless.network
+            </a>
+          </p>
         </div>
       </div>
     </div>

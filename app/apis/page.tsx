@@ -104,7 +104,6 @@ export default function ApiCatalog() {
       category: "Entertainment",
       difficulty: "Intermediate",
     },
-    
     {
       id: "nasa-apod-api",
       name: "NASA APOD API",
@@ -112,8 +111,6 @@ export default function ApiCatalog() {
       category: "Science",
       difficulty: "Beginner",
     },
-
-     
     {
       id: "twitter-api",
       name: "Twitter API",
@@ -121,8 +118,6 @@ export default function ApiCatalog() {
       category: "Social Media",
       difficulty: "Intermediate",
     },
-
-    
     {
       id: "spotify-api",
       name: "Spotify API",
@@ -130,14 +125,13 @@ export default function ApiCatalog() {
       category: "Music",
       difficulty: "Intermediate",
     },
-{
-    id: "unsplash-api",
-    name: "Unsplash API",
-    description: "Access high-quality, royalty-free images for your projects",
-    category: "Photography",
-    difficulty: "Beginner",
-  },
-
+    {
+      id: "unsplash-api",
+      name: "Unsplash API",
+      description: "Access high-quality, royalty-free images for your projects",
+      category: "Photography",
+      difficulty: "Beginner",
+    },
   ]
 
   // Get unique categories

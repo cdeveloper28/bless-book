@@ -91,7 +91,7 @@ https.get('https://api.example.com/data', (res) => {
           <span>•</span>
           <span>15 min read</span>
           <span>•</span>
-          <span>Last updated: April 25, 2025</span>
+          <span>Last updated: April 25, 2024</span>
         </div>
 
         <div className="prose prose-green dark:prose-invert max-w-none">

@@ -781,7 +781,14 @@ h1 {
             </div>
 
             {/* Bless Network CLI Integration Section */}
-           
+            <BlessCliIntegration
+              apiName={api.name}
+              apiBaseUrl={api.baseUrl}
+              apiEndpoint="/people/1"
+              authType="none"
+              authParam=""
+            />
+
             <div>
               <h2 className="text-2xl font-bold mb-4">Error Handling</h2>
               <div className="space-y-4">
@@ -896,7 +903,16 @@ h1 {
                       Bless Network CLI Documentation
                     </a>
                   </li>
-                 
+                  <li>
+                    <a
+                      href="https://bless.network/templates/star-wars-api"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:underline flex items-center gap-1 text-sm"
+                    >
+                      Star Wars API Template
+                    </a>
+                  </li>
                   <li>
                     <a
                       href="https://discord.gg/yXUWUzQU"

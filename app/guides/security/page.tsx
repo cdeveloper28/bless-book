@@ -214,7 +214,7 @@ async function postWithCsrfProtection(url, data) {
           <span>•</span>
           <span>35 min read</span>
           <span>•</span>
-          <span>Last updated: April 26, 2025</span>
+          <span>Last updated: April 26, 2024</span>
         </div>
 
         <div className="prose prose-green dark:prose-invert max-w-none">
@@ -694,22 +694,26 @@ function logSecurityEvent(event) {
           <h2>Further Reading</h2>
           <ul>
             <li>
-              <Link href="/guides/authentication" className="t text-blue-600 hover:underline">
+              <Link href="/guides/authentication" className="text-primary hover:underline">
                 API Authentication Methods
               </Link>
             </li>
             <li>
-              <Link href="/guides/rate-limiting" className=" text-blue-600 hover:underline">
+              <Link href="/guides/rate-limiting" className="text-primary hover:underline">
                 Dealing with Rate Limits
               </Link>
             </li>
-          
+            <li>
+              <Link href="/guides/testing" className="text-primary hover:underline">
+                Testing API Integrations
+              </Link>
+            </li>
             <li>
               <a
-                href="https://owasp.org/API-Security/"
+                href="https://owasp.org/API-Security/editions/2023/en/0x00-introduction/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" text-blue-600 hover:underline"
+                className="text-primary hover:underline"
               >
                 OWASP API Security Top 10
               </a>

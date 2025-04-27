@@ -854,7 +854,13 @@ select {
             </div>
 
             {/* Bless Network CLI Integration Section */}
-           
+            <BlessCliIntegration
+              apiName={api.name}
+              apiBaseUrl={api.baseUrl}
+              apiEndpoint="/users/octocat"
+              authType="bearer"
+              authParam="header 'Authorization: Bearer YOUR_PERSONAL_ACCESS_TOKEN'"
+            />
 
             <div>
               <h2 className="text-2xl font-bold mb-4">Error Handling</h2>
@@ -982,7 +988,16 @@ select {
                       Bless Network CLI Documentation
                     </a>
                   </li>
-                 
+                  <li>
+                    <a
+                      href="https://bless.network/templates/github-api"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:underline flex items-center gap-1 text-sm"
+                    >
+                      GitHub API Template
+                    </a>
+                  </li>
                   <li>
                     <a
                       href="https://discord.gg/yXUWUzQU"

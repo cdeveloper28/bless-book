@@ -1140,7 +1140,13 @@ function showError(message) {
             </div>
 
             {/* Bless Network CLI Integration Section */}
-        
+            <BlessCliIntegration
+              apiName={api.name}
+              apiBaseUrl={api.baseUrl}
+              apiEndpoint="/tweets/search/recent?query=coding"
+              authType="bearer"
+              authParam="header 'Authorization: Bearer YOUR_BEARER_TOKEN'"
+            />
 
             <div>
               <h2 className="text-2xl font-bold mb-4">Error Handling</h2>
@@ -1300,7 +1306,16 @@ function showError(message) {
                       Bless Network CLI Documentation
                     </a>
                   </li>
-                 
+                  <li>
+                    <a
+                      href="https://bless.network/templates/twitter-api"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:underline flex items-center gap-1 text-sm"
+                    >
+                      Twitter API Template
+                    </a>
+                  </li>
                   <li>
                     <a
                       href="https://discord.gg/yXUWUzQU"
