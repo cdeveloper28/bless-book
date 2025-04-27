@@ -124,7 +124,7 @@ export default function Home() {
           <Card>
             <CardHeader className="pb-2">
               <Globe className="h-6 w-6 mb-2 text-primary" aria-hidden="true" />
-              <CardTitle>50+ APIs</CardTitle>
+              <CardTitle> APIs</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">
