@@ -12,7 +12,7 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center gap-4 text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-              Master API Integration with <span className="bg-green-600 mr-1 p-1 font-mono "> Bless API Bo🕮k</span>
+              Master API Integration with <span className="bg-green-600 mr-1 p-1 font-mono "> Bless API Bo<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-marked-icon lucide-book-marked"><path d="M10 2v8l3-3 3 3V2"/><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></svg>k</span>
             </h1>
             <p className="max-w-[700px] text-muted-foreground md:text-xl">
               Your comprehensive guide to integrating APIs with step-by-step tutorials and ready-to-use code snippets.
@@ -63,11 +63,11 @@ export default function Home() {
           <div className="border-2 border-green-700 p-3 rounded-2xl shadow-2xl max-w-3xl mx-auto mt-12 space-y-8">
             <div className="space-y-4">
               <h2 className="text-2xl font-bold text-gray-800">
-               For bless cli update <span className="text-blue-600">bls.toml</span> File
+               For bless cli update <span className="text-blue-600">bls.toml</span>
               </h2>
               <p className="text-gray-700 text-base leading-relaxed">
-                In your <span className="font-semibold text-blue-600">[deployment]</span> section, you need to add the
-                line below.
+                In your <span className="font-semibold text-blue-600">[deployment]</span> section, you need to add
+                .
                 <br />
               <p className="text-green-400">  permissions = [ "https://yourapiwebsite/" ]</p>
                 <br />
@@ -96,7 +96,7 @@ export default function Home() {
             </div>
           </div>
         </center>
-        <div className="flex flex-col gap-4 items-center text-center">
+        <div className="flex flex-col gap-4 items-center text-center mt-6 mb-4">
           <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Powered by Bless.network</div>
           <h2 className="text-3xl font-bold tracking-tight">Built for the Bless Network Ecosystem</h2>
           <p className="max-w-[700px] text-muted-foreground md:text-xl">
