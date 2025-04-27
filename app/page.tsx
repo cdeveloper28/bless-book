@@ -12,10 +12,10 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center gap-4 text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-              Master API Integration with Bless API Book
+              Master API Integration with <span className="bg-green-600 mr-1 p-1 font-mono "> Bless API Bo🕮k</span>
             </h1>
             <p className="max-w-[700px] text-muted-foreground md:text-xl">
-              Your comprehensive guide to integrating 50+ APIs with step-by-step tutorials and ready-to-use code
+              Your comprehensive guide to integrating  APIs with step-by-step tutorials and ready-to-use code
               snippets.
             </p>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -26,6 +26,10 @@ export default function Home() {
                 <Link href="/guides">Read Guides</Link>
               </Button>
             </div>
+             <center className="flex  justify-center">
+            <div className="bg-green-600 rounded-full animate-ping text-green-700 h-2 w-2 inline mt-2 mr-1"></div>
+              <text className="max-w-[700px] text-muted-foreground md:text-xl inline"> View on desktop for better interactivity </text>
+            </center>
           </div>
         </div>
       </section>
