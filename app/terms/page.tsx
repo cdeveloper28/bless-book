@@ -149,14 +149,7 @@ export default function TermsOfServicePage() {
             the revised terms. If you do not agree to the new terms, please stop using the Service.
           </p>
 
-          <h2>Contact Us</h2>
-          <p>
-            If you have any questions about these Terms, please contact us at:
-            <br />
-            <a href="mailto:terms@bless.network" className="text-primary">
-              terms@bless.network
-            </a>
-          </p>
+         
         </div>
       </div>
     </div>

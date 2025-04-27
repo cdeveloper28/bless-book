@@ -5,7 +5,6 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import CodeBlock from "@/components/code-block"
-import BlessCliIntegration from "@/components/bless-cli-integration"
 
 export default function TwitterApiPage() {
   const api = {
@@ -1139,15 +1138,6 @@ function showError(message) {
               </div>
             </div>
 
-            {/* Bless Network CLI Integration Section */}
-            <BlessCliIntegration
-              apiName={api.name}
-              apiBaseUrl={api.baseUrl}
-              apiEndpoint="/tweets/search/recent?query=coding"
-              authType="bearer"
-              authParam="header 'Authorization: Bearer YOUR_BEARER_TOKEN'"
-            />
-
             <div>
               <h2 className="text-2xl font-bold mb-4">Error Handling</h2>
               <div className="space-y-4">
@@ -1304,16 +1294,6 @@ function showError(message) {
                       className="text-primary hover:underline flex items-center gap-1 text-sm"
                     >
                       Bless Network CLI Documentation
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://bless.network/templates/twitter-api"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary hover:underline flex items-center gap-1 text-sm"
-                    >
-                      Twitter API Template
                     </a>
                   </li>
                   <li>

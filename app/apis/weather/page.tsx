@@ -5,7 +5,6 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import CodeBlock from "@/components/code-block"
-import BlessCliIntegration from "@/components/bless-cli-integration"
 
 // This is a sample API documentation page for the Weather API
 // In a real implementation, you would fetch this data from a database or CMS
@@ -303,13 +302,6 @@ h1 {
             </div>
 
             {/* Bless Network CLI Integration Section */}
-            <BlessCliIntegration
-              apiName={api.name}
-              apiBaseUrl={api.baseUrl}
-              apiEndpoint="/current.json?q=London"
-              authType="apiKey"
-              authParam="header 'key: YOUR_API_KEY_HERE'"
-            />
 
             <div>
               <h2 className="text-2xl font-bold mb-4">Error Handling</h2>
@@ -415,26 +407,6 @@ h1 {
               <div className="rounded-lg border p-4 bg-muted/30">
                 <h3 className="text-lg font-semibold mb-2">Bless Network Resources</h3>
                 <ul className="space-y-2">
-                  <li>
-                    <a
-                      href="https://docs.bless.network/build-on-bless/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary hover:underline flex items-center gap-1 text-sm"
-                    >
-                      Bless Network CLI Documentation
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://bless.network/templates/weather-api"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary hover:underline flex items-center gap-1 text-sm"
-                    >
-                      Weather API Template
-                    </a>
-                  </li>
                   <li>
                     <a
                       href="https://discord.gg/yXUWUzQU"

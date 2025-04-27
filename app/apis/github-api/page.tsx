@@ -6,7 +6,8 @@ import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { CodeBlock } from "@/components/ui/code-block"
-import { BlessCliIntegration } from "@/components/bless-cli-integration"
+// Remove the BlessCliIntegration import
+// Remove: import { BlessCliIntegration } from "@/components/bless-cli-integration"
 
 export default function GitHubApiPage() {
   const api = {
@@ -854,6 +855,10 @@ select {
             </div>
 
             {/* Bless Network CLI Integration Section */}
+            {/* Remove the BlessCliIntegration component section */}
+            {/* Remove the entire section:
+            \`\`\`
+            {/* Bless Network CLI Integration Section * /}
             <BlessCliIntegration
               apiName={api.name}
               apiBaseUrl={api.baseUrl}
@@ -861,6 +866,7 @@ select {
               authType="bearer"
               authParam="header 'Authorization: Bearer YOUR_PERSONAL_ACCESS_TOKEN'"
             />
+            \`\`\` */}
 
             <div>
               <h2 className="text-2xl font-bold mb-4">Error Handling</h2>
@@ -988,6 +994,9 @@ select {
                       Bless Network CLI Documentation
                     </a>
                   </li>
+                  {/* Remove the Bless Network template link from the resources section */}
+                  {/* Remove:
+                  \`\`\`
                   <li>
                     <a
                       href="https://bless.network/templates/github-api"
@@ -998,6 +1007,7 @@ select {
                       GitHub API Template
                     </a>
                   </li>
+                  \`\`\` */}
                   <li>
                     <a
                       href="https://discord.gg/yXUWUzQU"

@@ -611,11 +611,7 @@ class AdaptiveThrottler {
                 Error Handling Best Practices
               </Link>
             </li>
-            <li>
-              <Link href="/guides/testing" className="text-primary hover:underline">
-                Testing API Integrations
-              </Link>
-            </li>
+           
           </ul>
         </div>
       </div>

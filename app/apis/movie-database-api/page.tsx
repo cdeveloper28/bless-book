@@ -5,7 +5,6 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import CodeBlock from "@/components/code-block"
-import BlessCliIntegration from "@/components/bless-cli-integration"
 
 export default function MovieDatabaseApiPage() {
   const api = {
@@ -1188,15 +1187,6 @@ h1 {
               </div>
             </div>
 
-            {/* Bless Network CLI Integration Section */}
-            <BlessCliIntegration
-              apiName={api.name}
-              apiBaseUrl={api.baseUrl}
-              apiEndpoint="/movie/popular"
-              authType="apiKey"
-              authParam="query 'api_key=YOUR_API_KEY_HERE'"
-            />
-
             <div>
               <h2 className="text-2xl font-bold mb-4">Error Handling</h2>
               <div className="space-y-4">
@@ -1331,16 +1321,6 @@ h1 {
                       className="text-primary hover:underline flex items-center gap-1 text-sm"
                     >
                       Bless Network CLI Documentation
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://bless.network/templates/movie-database-api"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary hover:underline flex items-center gap-1 text-sm"
-                    >
-                      Movie Database API Template
                     </a>
                   </li>
                   <li>

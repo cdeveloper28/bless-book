@@ -23,7 +23,7 @@ async function authenticateSecurely() {
     });
     
     if (!response.ok) {
-      throw new Error(\`Authentication failed: \${response.status}\`);
+      throw new Error('Authentication failed: ' + response.status);
     }
     
     const data = await response.json();
@@ -82,7 +82,7 @@ async function fetchSecureData(url) {
         throw new Error('Authentication required');
       }
       
-      throw new Error(\`Request failed: \${response.status}\`);
+      throw new Error('Request failed: ' + response.status);
     }
     
     return await response.json();
@@ -191,7 +191,7 @@ async function postWithCsrfProtection(url, data) {
   });
   
   if (!response.ok) {
-    throw new Error(\`Request failed: \${response.status}\`);
+    throw new Error('Request failed: ' + response.status);
   }
   
   return response.json();
@@ -704,13 +704,13 @@ function logSecurityEvent(event) {
               </Link>
             </li>
             <li>
-              <Link href="/guides/testing" className="text-primary hover:underline">
-                Testing API Integrations
+              <Link href="/guides/api-integrations" className="text-primary hover:underline">
+                API Integrations
               </Link>
             </li>
             <li>
               <a
-                href="https://owasp.org/API-Security/editions/2023/en/0x00-introduction/"
+                href="https://owasp.org/API-Security/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:underline"
