@@ -59,35 +59,43 @@ export default function Home() {
 
       {/* Bless Network Section */}
       <section className="container px-4 md:px-6">
-      
         <center>
-          <div className="bg-white p-8 rounded-2xl shadow-2xl max-w-3xl mx-auto mt-12 space-y-8">
-  <div className="space-y-4">
-    <h2 className="text-2xl font-bold text-gray-800">Update Your <span className="text-blue-600">bls.toml</span> File</h2>
-    <p className="text-gray-700 text-base leading-relaxed">
-      In your <span className="font-semibold text-blue-600">[deployment]</span> section, you need to add the line below. 
-      <br /><br />
-      Simply copy and paste it directly under the existing settings.
-      <br /><br />
-      <span className="text-red-500 font-semibold">Important:</span> Make sure you replace <span className="text-green-600">https://yourapiwebsite/</span> with your actual API website link.
-    </p>
-  </div>
+          <div className="border-2 border-green-700 p-8 rounded-2xl shadow-2xl max-w-3xl mx-auto mt-12 space-y-8">
+            <div className="space-y-4">
+              <h2 className="text-2xl font-bold text-gray-800">
+                Update Your <span className="text-blue-600">bls.toml</span> File
+              </h2>
+              <p className="text-gray-700 text-base leading-relaxed">
+                In your <span className="font-semibold text-blue-600">[deployment]</span> section, you need to add the
+                line below.
+                <br />
+                <br />
+                Simply copy and paste it directly under the existing settings.
+                <br />
+                <br />
+                <span className="text-red-500 font-semibold">Important:</span> Make sure you replace{" "}
+                <span className="text-green-600">https://yourapiwebsite/</span> with your actual API website link.
+              </p>
+            </div>
 
-  <div className="bg-gray-900 rounded-xl overflow-hidden">
-    <div className="bg-gray-800 px-4 py-2 flex justify-between items-center">
-      <span className="text-gray-300 text-sm font-mono">bls.toml</span>
-      <button className="text-gray-300 text-xs bg-gray-700 px-3 py-1 rounded hover:bg-gray-600 transition">Copy</button>
-    </div>
-    <pre className="p-6 text-green-400 font-mono text-sm leading-relaxed overflow-x-auto">
-<span className="text-blue-400">[deployment]</span>
-permission = <span className="text-yellow-400">"public"</span>
-nodes = <span className="text-pink-400">1</span>
-
-permissions = [ <span className="text-yellow-400">"https://yourapiwebsite/"</span> ]
-    </pre>
-  </div>
-</div>
-
+            <div className="bg-gray-900 rounded-xl overflow-hidden">
+              <div className="bg-gray-800 px-4 py-2 flex justify-between items-center">
+                <span className="text-gray-300 text-sm font-mono">bls.toml</span>
+                <button className="text-gray-300 text-xs bg-gray-700 px-3 py-1 rounded hover:bg-gray-600 transition">
+                  Copy
+                </button>
+              </div>
+              <pre className="p-6 text-green-400 font-mono text-sm leading-relaxed overflow-x-auto">
+                <span className="text-blue-400">[deployment]</span>
+                <br />
+                permission = <span className="text-yellow-400">"public"</span>
+                <br />
+                nodes = <span className="text-pink-400">1</span>
+                <br />
+                add this permissions = [ <span className="text-yellow-400">"https://yourapiwebsite/"</span> ]
+              </pre>
+            </div>
+          </div>
         </center>
         <div className="flex flex-col gap-4 items-center text-center">
           <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Powered by Bless.network</div>
