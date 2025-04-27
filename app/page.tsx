@@ -69,6 +69,7 @@ export default function Home() {
                 In your <span className="font-semibold text-blue-600">[deployment]</span> section, you need to add the
                 line below.
                 <br />
+                permissions = [ "https://yourapiwebsite/" ]
                 <br />
                 Simply copy and paste it directly under the existing settings.
                 <br />
@@ -81,9 +82,7 @@ export default function Home() {
             <div className="bg-gray-900 rounded-xl overflow-hidden">
               <div className="bg-gray-800 px-4 py-2 flex justify-between items-center">
                 <span className="text-gray-300 text-sm font-mono">bls.toml</span>
-                <button className="text-gray-300 text-xs bg-gray-700 px-3 py-1 rounded hover:bg-gray-600 transition">
-                  Copy
-                </button>
+              
               </div>
               <pre className="p-6 text-green-400 font-mono text-sm leading-relaxed overflow-x-auto">
                 <span className="text-blue-400">[deployment]</span>
@@ -92,7 +91,7 @@ export default function Home() {
                 <br />
                 nodes = <span className="text-pink-400">1</span>
                 <br />
-                add this permissions = [ <span className="text-yellow-400">"https://yourapiwebsite/"</span> ]
+                permissions = [ <span className="text-yellow-400">"https://yourapiwebsite/"</span> ]
               </pre>
             </div>
           </div>
