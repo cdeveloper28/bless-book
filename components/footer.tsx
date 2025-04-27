@@ -110,7 +110,7 @@ export default function Footer() {
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="https://twitter.com/blessnetwork"
+              href="https://twitter.com/theblessnetwork"
               className="text-muted-foreground hover:text-foreground"
               aria-label="Twitter"
               target="_blank"
