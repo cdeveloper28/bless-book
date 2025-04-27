@@ -60,16 +60,16 @@ export default function Home() {
       {/* Bless Network Section */}
       <section className="container px-4 md:px-6">
         <center>
-          <div className="border-2 border-green-700 p-8 rounded-2xl shadow-2xl max-w-3xl mx-auto mt-12 space-y-8">
+          <div className="border-2 border-green-700 p-3 rounded-2xl shadow-2xl max-w-3xl mx-auto mt-12 space-y-8">
             <div className="space-y-4">
               <h2 className="text-2xl font-bold text-gray-800">
-                Update Your <span className="text-blue-600">bls.toml</span> File
+               For bless cli update <span className="text-blue-600">bls.toml</span> File
               </h2>
               <p className="text-gray-700 text-base leading-relaxed">
                 In your <span className="font-semibold text-blue-600">[deployment]</span> section, you need to add the
                 line below.
                 <br />
-                permissions = [ "https://yourapiwebsite/" ]
+              <p className="text-green-400">  permissions = [ "https://yourapiwebsite/" ]</p>
                 <br />
                 Simply copy and paste it directly under the existing settings.
                 <br />
