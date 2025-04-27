@@ -30,7 +30,7 @@ Welcome to the Bless API Book - a comprehensive, community-driven handbook desig
 
 1. Clone this repository:
    ```
-   git clone https://github.com/bless-community/api-book.git
+   https://github.com/cdeveloper28/bless-book.git
    ```
 
 2. Install dependencies:
