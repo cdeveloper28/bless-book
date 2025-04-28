@@ -97,9 +97,7 @@ export default function Home() {
                 <div className="bg-gray-800 px-4 py-2 flex justify-between items-center">
                   <span className="text-gray-300 text-sm font-mono">bls.toml</span>
                   <div className="flex space-x-2">
-                    <button className="text-gray-300 hover:text-white">
-                      <Copy className="w-4 h-4" />
-                    </button>
+                  
                   </div>
                 </div>
                 <div className="p-5 font-mono text-sm leading-relaxed text-gray-300 overflow-x-auto">
