@@ -59,43 +59,95 @@ export default function Home() {
 
       {/* Bless Network Section */}
       <section className="container px-4 md:px-6">
-        <center>
-          <div className="border-2 border-green-700 p-3 rounded-2xl shadow-2xl max-w-3xl mx-auto mt-12 space-y-8">
-            <div className="space-y-4">
-              <h2 className="text-2xl font-bold text-gray-800">
-               For bless cli update <span className="text-blue-600">bls.toml</span>
-              </h2>
-              <p className="text-gray-700 text-base leading-relaxed">
-                In your <span className="font-semibold text-blue-600">[deployment]</span> section, you need to add
-                .
-                <br />
-              <p className="text-green-400">  permissions = [ "https://yourapiwebsite/" ]</p>
-                <br />
-                Simply copy and paste it directly under the existing settings.
-                <br />
-                <br />
-                <span className="text-red-500 font-semibold">Important:</span> Make sure you replace{" "}
-                <span className="text-green-600">https://yourapiwebsite/</span> with your actual API website link.
-              </p>
+        <div className="flex flex-col items-center justify-center mb-8">
+          <div className="bg-white rounded-2xl shadow-xl border border-green-600 max-w-3xl w-full overflow-hidden">
+            {/* Header with green-700 */}
+            <div className="bg-green-700 px-6 py-5 text-white">
+              <span className="bg-green-50 text-green-600 text-xs font-semibold px-3 py-1 rounded-full">
+                Configuration Update
+              </span>
+              <h1 className="text-2xl text-gray-600 font-bold mt-3 mb-0">Updating BLESS CLI Configuration</h1>
+              <p className="text-gray-600 mt-1">Adding API permissions to your bls.toml file</p>
             </div>
 
-            <div className="bg-gray-900 rounded-xl overflow-hidden">
-              <div className="bg-gray-800 px-4 py-2 flex justify-between items-center">
-                <span className="text-gray-300 text-sm font-mono">bls.toml</span>
-              
+            {/* Body */}
+            <div className="p-6">
+              <div className="mb-6">
+                <p className="text-gray-600 leading-relaxed">
+                  In your <span className="font-semibold text-green-600">[deployment]</span> section of the{" "}
+                  <span className="font-semibold text-green-600">bls.toml</span> file, you need to add the following
+                  permission line:
+                </p>
+
+                <div className="bg-gray-100 text-green-600 font-mono text-sm px-3 py-1 rounded my-3 inline-block">
+                  permissions = [ "https://yourapiwebsite/" ]
+                </div>
+
+                <p className="text-gray-600">Simply copy and paste it directly under the existing settings.</p>
+
+                <div className="flex items-center bg-red-50 border-l-4 border-red-500 p-4 rounded mt-5">
+                  <svg
+                    className="w-5 h-5 text-red-500 mr-3"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                    <line x1="12" y1="9" x2="12" y2="13"></line>
+                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                  </svg>
+                  <span className="text-red-800 font-medium">
+                    Important: Replace <span className="text-green-600">https://yourapiwebsite/</span> with your actual
+                    API endpoint URL.
+                  </span>
+                </div>
               </div>
-              <pre className="p-6 text-green-400 font-mono text-sm leading-relaxed overflow-x-auto">
-                <span className="text-blue-400">[deployment]</span>
-                <br />
-                permission = <span className="text-yellow-400">"public"</span>
-                <br />
-                nodes = <span className="text-pink-400">1</span>
-                <br />
-                permissions = [ <span className="text-yellow-400">"https://yourapiwebsite/"</span> ]
-              </pre>
+
+              {/* Code Block */}
+              <div className="bg-gray-900 rounded-xl overflow-hidden mt-6">
+                <div className="bg-gray-800 px-4 py-2 flex justify-between items-center">
+                  <span className="text-gray-300 text-sm font-mono">bls.toml</span>
+                  <div className="flex space-x-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="text-gray-400"
+                    >
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                  </div>
+                </div>
+                <div className="p-5 font-mono text-sm leading-relaxed text-gray-300 overflow-x-auto">
+                  <div>
+                    <span className="text-blue-400">[deployment]</span>
+                  </div>
+                  <div>
+                    permission = <span className="text-yellow-400">"public"</span>
+                  </div>
+                  <div>
+                    nodes = <span className="text-pink-400">1</span>
+                  </div>
+                  <div>
+                    permissions = [ <span className="text-yellow-400">"https://yourapiwebsite/"</span> ]
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </center>
+        </div>
+
         <div className="flex flex-col gap-4 items-center text-center mt-6 mb-4">
           <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Powered by Bless.network</div>
           <h2 className="text-3xl font-bold tracking-tight">Built for the Bless Network Ecosystem</h2>

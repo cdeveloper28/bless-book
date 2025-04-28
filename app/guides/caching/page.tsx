@@ -380,7 +380,7 @@ async function fetchWithETag(url, etag) {
           <span>•</span>
           <span>25 min read</span>
           <span>•</span>
-          <span>Last updated: April 26, 2024</span>
+          <span>Last updated: April 26, 2025</span>
         </div>
 
         <div className="prose prose-green dark:prose-invert max-w-none">
