@@ -58,7 +58,7 @@ export default function Home() {
       {/* Bless Network Section */}
       <section className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center mb-8">
-          <div className="bg-white rounded-2xl shadow-xl border border-green-600 max-w-3xl w-full overflow-hidden">
+          <div className=" rounded-2xl shadow-xl border border-green-600 max-w-3xl w-full overflow-hidden">
             {/* Header with green-700 */}
             <div className="bg-green-700 px-6 py-5 text-white">
               <span className="bg-green-50 text-green-600 text-xs font-semibold px-3 py-1 rounded-full">
@@ -69,7 +69,7 @@ export default function Home() {
             </div>
 
             {/* Body */}
-            <div className="p-6 bg-transparent">
+            <div className="p-6 ">
               <div className="mb-6">
                 <p className="text-gray-600 leading-relaxed">
                   In your <span className="font-semibold text-green-600">[deployment]</span> section of the{" "}
