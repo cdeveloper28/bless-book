@@ -730,11 +730,7 @@ function logSecurityEvent(event) {
                 Dealing with Rate Limits
               </Link>
             </li>
-            <li>
-              <Link href="/guides/api-integrations" className="text-primary hover:underline">
-                API Integrations
-              </Link>
-            </li>
+            
             <li>
               <a
                 href="https://owasp.org/API-Security/"
