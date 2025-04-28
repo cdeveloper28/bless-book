@@ -71,7 +71,6 @@ See our website and  on the website you can click contribute for detailed guidel
 
 - Next.js
 - React
-typescript
 - Tailwind CSS
 - TypeScript
 - MDX for documentation
