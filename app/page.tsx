@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowRight, Code, Database, Globe, Server, Terminal } from "lucide-react"
+import { ArrowRight, Code, Database, Globe, Server, Terminal, Copy, AlertTriangle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import FeaturedApis from "@/components/featured-apis"
@@ -22,7 +22,7 @@ export default function Home() {
                 <Link href="/apis">
                   Browse APIs
                   <svg
-                    className="animate-pulse "
+                    className="animate-pulse ml-2"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -32,7 +32,6 @@ export default function Home() {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="lucide lucide-sparkles-icon lucide-sparkles"
                   >
                     <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" />
                     <path d="M20 3v4" />
@@ -46,13 +45,12 @@ export default function Home() {
                 <Link href="/guides">Read Guides</Link>
               </Button>
             </div>
-            <center className="flex  justify-center">
+            <div className="flex justify-center">
               <div className="bg-green-600 rounded-full animate-ping text-green-700 h-2 w-2 inline mt-2 mr-1"></div>
-              <text className="max-w-[700px] text-muted-foreground md:text-xl inline">
-                {" "}
-                View on desktop for better interactivity{" "}
-              </text>
-            </center>
+              <span className="max-w-[700px] text-muted-foreground md:text-xl inline">
+                View on desktop for better interactivity
+              </span>
+            </div>
           </div>
         </div>
       </section>
@@ -66,12 +64,12 @@ export default function Home() {
               <span className="bg-green-50 text-green-600 text-xs font-semibold px-3 py-1 rounded-full">
                 Configuration Update
               </span>
-              <h1 className="text-2xl text-gray-600 font-bold mt-3 mb-0">Updating BLESS CLI Configuration</h1>
-              <p className="text-gray-600 mt-1">Adding API permissions to your bls.toml file</p>
+              <h1 className="text-2xl text-white font-bold mt-3 mb-0">Updating BLESS CLI Configuration</h1>
+              <p className="text-white mt-1">Adding API permissions to your bls.toml file</p>
             </div>
 
             {/* Body */}
-            <div className="p-6">
+            <div className="p-6 bg-transparent">
               <div className="mb-6">
                 <p className="text-gray-600 leading-relaxed">
                   In your <span className="font-semibold text-green-600">[deployment]</span> section of the{" "}
@@ -86,20 +84,7 @@ export default function Home() {
                 <p className="text-gray-600">Simply copy and paste it directly under the existing settings.</p>
 
                 <div className="flex items-center bg-red-50 border-l-4 border-red-500 p-4 rounded mt-5">
-                  <svg
-                    className="w-5 h-5 text-red-500 mr-3"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
-                    <line x1="12" y1="9" x2="12" y2="13"></line>
-                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
-                  </svg>
+                  <AlertTriangle className="w-5 h-5 text-red-500 mr-3" />
                   <span className="text-red-800 font-medium">
                     Important: Replace <span className="text-green-600">https://yourapiwebsite/</span> with your actual
                     API endpoint URL.
@@ -112,21 +97,9 @@ export default function Home() {
                 <div className="bg-gray-800 px-4 py-2 flex justify-between items-center">
                   <span className="text-gray-300 text-sm font-mono">bls.toml</span>
                   <div className="flex space-x-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="text-gray-400"
-                    >
-                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                    </svg>
+                    <button className="text-gray-300 hover:text-white">
+                      <Copy className="w-4 h-4" />
+                    </button>
                   </div>
                 </div>
                 <div className="p-5 font-mono text-sm leading-relaxed text-gray-300 overflow-x-auto">
@@ -176,7 +149,7 @@ export default function Home() {
           <Card>
             <CardHeader className="pb-2">
               <Globe className="h-6 w-6 mb-2 text-primary" aria-hidden="true" />
-              <CardTitle> APIs</CardTitle>
+              <CardTitle>APIs</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">

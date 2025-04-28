@@ -237,11 +237,7 @@ async function postWithCsrfProtection(url, data) {
                 in your <code>bls.toml</code> file:
               </p>
 
-              <img
-                src="/images/bls-toml-config.png"
-                alt="bls.toml configuration example"
-                className="w-full max-w-2xl mb-6 border rounded shadow-sm"
-              />
+            
 
               <div className="bg-muted p-4 rounded-md mb-4">
                 <pre className="whitespace-pre-wrap text-sm">
